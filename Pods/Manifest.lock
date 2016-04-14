@@ -1,0 +1,22 @@
+PODS:
+  - Bolts/Tasks (1.6.0)
+  - IQKeyboardManagerSwift (3.3.4)
+  - Parse (1.13.0):
+    - Bolts/Tasks (~> 1.6)
+  - SideMenu (1.0.3)
+  - SwiftLoader (0.2.5)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift (= 3.3.4)
+  - Parse
+  - SideMenu
+  - SwiftLoader
+
+SPEC CHECKSUMS:
+  Bolts: f52a250053bb517ca874523c3913776359ab3def
+  IQKeyboardManagerSwift: 6f2290d093f5269dc07bdae8bc58e968cf9c4738
+  Parse: f51c24d2feb412e4b2d6cc73d37cb24e8d0089bc
+  SideMenu: 166ea23f143a8df84d0cf2170057793e26f0ba9e
+  SwiftLoader: 12d7a6f661f5e9a2c9a72003e7dd6162f4ff0cc4
+
+COCOAPODS: 0.39.0
