@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1357BF8B1CCD64570082103E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1357BF891CCD64570082103E /* Main.storyboard */; };
+		1357BF8E1CCD69960082103E /* PatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1357BF8D1CCD69960082103E /* PatientViewController.swift */; };
+		135FA0111CCE7FD600B782FE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FA0101CCE7FD600B782FE /* SettingsViewController.swift */; };
 		13C2C7A81CA60092009CEE23 /* GetStartedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C2C7A71CA60092009CEE23 /* GetStartedVC.swift */; };
 		13C5F2B51CA5EB4000D4220B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C5F2951CA5EB4000D4220B /* AppDelegate.swift */; };
 		13C5F2B61CA5EB4000D4220B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13C5F2981CA5EB4000D4220B /* Assets.xcassets */; };
-		13C5F2B81CA5EB4000D4220B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13C5F29B1CA5EB4000D4220B /* Main.storyboard */; };
 		13C5F2BB1CA5EB4000D4220B /* PLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C5F2A31CA5EB4000D4220B /* PLoginViewController.swift */; };
 		13C5F2BD1CA5EB4000D4220B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C5F2A61CA5EB4000D4220B /* MenuViewController.swift */; };
 		13C5F2BE1CA5EB4000D4220B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C5F2A71CA5EB4000D4220B /* ViewController.swift */; };
@@ -32,10 +34,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1357BF8A1CCD64570082103E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HealthNote_V1.0/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		1357BF8D1CCD69960082103E /* PatientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientViewController.swift; sourceTree = "<group>"; };
+		135FA0101CCE7FD600B782FE /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		13C2C7A71CA60092009CEE23 /* GetStartedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStartedVC.swift; sourceTree = "<group>"; };
 		13C5F2951CA5EB4000D4220B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13C5F2981CA5EB4000D4220B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		13C5F29C1CA5EB4000D4220B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13C5F2A31CA5EB4000D4220B /* PLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLoginViewController.swift; sourceTree = "<group>"; };
 		13C5F2A61CA5EB4000D4220B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		13C5F2A71CA5EB4000D4220B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,10 +75,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1357BF8C1CCD696A0082103E /* Patient View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1357BF8D1CCD69960082103E /* PatientViewController.swift */,
+			);
+			path = "Patient View Controller";
+			sourceTree = "<group>";
+		};
 		13C2C7A61CA6001B009CEE23 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				13C5F29B1CA5EB4000D4220B /* Main.storyboard */,
+				1357BF891CCD64570082103E /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -122,7 +134,9 @@
 			children = (
 				13C5F2A21CA5EB4000D4220B /* Login */,
 				13C5F2A51CA5EB4000D4220B /* Side Menu View Controller */,
+				1357BF8C1CCD696A0082103E /* Patient View Controller */,
 				13C5F2A71CA5EB4000D4220B /* ViewController.swift */,
+				135FA0101CCE7FD600B782FE /* SettingsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -300,7 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13C5F2C61CA5EB4000D4220B /* MenuTableViewCell.xib in Resources */,
-				13C5F2B81CA5EB4000D4220B /* Main.storyboard in Resources */,
+				1357BF8B1CCD64570082103E /* Main.storyboard in Resources */,
 				13C5F2B61CA5EB4000D4220B /* Assets.xcassets in Resources */,
 				13C5F2C41CA5EB4000D4220B /* DashboardCollectionViewCell.xib in Resources */,
 				13C5F2C71CA5EB4000D4220B /* Info.plist in Resources */,
@@ -376,21 +390,22 @@
 				13C5F2B51CA5EB4000D4220B /* AppDelegate.swift in Sources */,
 				13D70DC11CB06CEA00DD0291 /* HNParseLogin.swift in Sources */,
 				13C5F2C01CA5EB4000D4220B /* Singleton.swift in Sources */,
+				1357BF8E1CCD69960082103E /* PatientViewController.swift in Sources */,
 				13C5F2BB1CA5EB4000D4220B /* PLoginViewController.swift in Sources */,
 				13D70DC31CB07CE700DD0291 /* HNParseSignUp.swift in Sources */,
+				135FA0111CCE7FD600B782FE /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		13C5F29B1CA5EB4000D4220B /* Main.storyboard */ = {
+		1357BF891CCD64570082103E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				13C5F29C1CA5EB4000D4220B /* Base */,
+				1357BF8A1CCD64570082103E /* Base */,
 			);
 			name = Main.storyboard;
-			path = ../../..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

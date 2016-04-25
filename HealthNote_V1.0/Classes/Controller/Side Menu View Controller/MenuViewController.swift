@@ -84,18 +84,25 @@ class MenuViewController: UIViewController
         {
         case 0:
             
-            SideMenuManager.menuLeftNavigationController?.dismissViewControllerAnimated(true, completion: { () -> Void in
+            SingletonStoryboard.sharedInstance.dashboardPushFromSingleton(self, withCompletionHAndler: { (success) -> Void in
                 
             })
+
+//            SideMenuManager.menuLeftNavigationController?.dismissViewControllerAnimated(false, completion: { () -> Void in
+//
+//            })
             
             break //
             
         case 1:
-            
+            let vc = SingletonStoryboard.sharedInstance.getMainStoryboad().instantiateViewControllerWithIdentifier("patientVCId")
+            self.navigationController?.pushViewController(vc, animated: true)
             break //
             
         case 2:
-            
+            let vc = SingletonStoryboard.sharedInstance.getMainStoryboad().instantiateViewControllerWithIdentifier("settingsVCId")
+            self.navigationController?.pushViewController(vc, animated: true)
+
             break //
             
         case 5:

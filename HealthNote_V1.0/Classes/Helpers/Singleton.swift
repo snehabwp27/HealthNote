@@ -99,5 +99,4 @@ class Singleton: NSObject
         return result
     }
 
-
 }

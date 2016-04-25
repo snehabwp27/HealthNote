@@ -27,5 +27,4 @@ struct Macros
         static let CELL_TAPPED_COLOR : UIColor = UIColor(colorLiteralRed: 153.0/255.0, green: 0/255.0, blue: 0/255.0, alpha: 1.0)
         
     }
-
 }

@@ -27,7 +27,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     {
         super.viewDidLoad()
         preUI()
-        makeSideMenu()
+        // Checking if sidemenu already created
+        if isSideMenuAvailable == false
+        {
+            makeSideMenu()
+            isSideMenuAvailable = true
+        }
         preSetUp()
 
     }

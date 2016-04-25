@@ -44,14 +44,17 @@ class SingletonStoryboard: NSObject
         target.navigationController?.popToRootViewControllerAnimated(true)
         withCompletionHAndler(success: true)
     }
-    
-
-    
-    
     // Find A Doc Storyboard
     func getMainStoryboad() -> UIStoryboard
     {
         return UIStoryboard(name: "Main", bundle: nil)
+    }
+    //Patient Storyboard
+    func patientPushFromSingleton(target : UIViewController, withCompletionHandler:(success : Bool) ->Void)
+    {
+        let vc = getMainStoryboad().instantiateViewControllerWithIdentifier("patientVCId")
+        target.navigationController?.pushViewController(vc, animated: true)
+        withCompletionHandler(success: true)
     }
 
 }

@@ -10,6 +10,9 @@ import UIKit
 import IQKeyboardManagerSwift
 import Parse
 
+
+var isSideMenuAvailable : Bool!
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -52,6 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //MARK:- Custom Functions
     func setup()
     {
+        isSideMenuAvailable = false
         iqKeyboardManager()
         parseSetup()
     }
