@@ -87,9 +87,14 @@ class HNParse: NSObject
             {
                 if object?.count > 0
                 {
-                    self.savePatientDetailsGlobalVariable(object![0])
+                    self.savePatientDetailsGlobalVariable(object![0], withCompletionHandler: { (success, responseDic) -> () in
+                        withCompletionHandler(success: true, responseDic: object!)
+                    })
                 }
-                 withCompletionHandler(success: true, responseDic: object!)
+                else
+                {
+                    withCompletionHandler(success: false, responseDic:"")
+                }
             }else
             {
                 withCompletionHandler(success: false, responseDic:"")
@@ -98,7 +103,7 @@ class HNParse: NSObject
         }
 
     }
-    func savePatientDetailsGlobalVariable(object : PFObject)
+    func savePatientDetailsGlobalVariable(object : PFObject,withCompletionHandler:(success : Bool, responseDic : AnyObject)->())
     {
         let model = HNPatient()
         model.name              =  object["name"] as! String
@@ -111,8 +116,27 @@ class HNParse: NSObject
         model.emailId           =  object["emailId"] as! String
         model.address           =  object["address"] as! String
         model.phoneNumber       =  object["phoneNumber"] as! String
-        model.profilePicData    =  object["profilePicData"] as! NSData
-        GlobalVariables.sharedManager.patientDetails = model
+        if let userPicture = object["profilePicData"]
+        {
+            (userPicture as! PFFile).getDataInBackgroundWithBlock({ (data, err) -> Void in
+                if err != nil
+                {
+                    withCompletionHandler(success: false, responseDic: "")
+
+                }
+                model.profilePicData    =  data! as NSData
+                GlobalVariables.sharedManager.patientDetails = model
+                withCompletionHandler(success: true, responseDic: "")
+                
+                }, progressBlock: { (progress) -> Void in
+                    
+            })
+        }else
+        {
+            model.profilePicData    =   NSData()
+            GlobalVariables.sharedManager.patientDetails = model
+            withCompletionHandler(success: true, responseDic: "")
+        }
 
     }
     func parseSavePatientDetailsForCurrentUser(model : HNPatient, withCompletionHandler:(success : Bool, responseDic : AnyObject)->())

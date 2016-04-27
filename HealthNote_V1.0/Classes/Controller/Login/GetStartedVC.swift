@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+
 
 class GetStartedVC: UIViewController {
 
@@ -42,12 +44,19 @@ class GetStartedVC: UIViewController {
     
     @IBAction func getStartedPressed(sender: AnyObject)
     {
-        SingletonStoryboard.sharedInstance.loginPushFromSingleton(self) { (success) -> Void in
+        let currentUser = PFUser.currentUser()
+        if currentUser != nil
+        {
+//            self.window?.rootViewController = SingletonStoryboard.sharedInstance.getMainStoryboad().instantiateViewControllerWithIdentifier("dashboardVCId");
+                    SingletonStoryboard.sharedInstance.dashboardPushFromSingleton(self) { (success) -> Void in
             
+                    }
+       
+        }else
+        {
+            SingletonStoryboard.sharedInstance.loginPushFromSingleton(self) { (success) -> Void in
+                
+            }
         }
-        
-//        SingletonStoryboard.sharedInstance.dashboardPushFromSingleton(self) { (success) -> Void in
-//            
-//        }
     }
 }
