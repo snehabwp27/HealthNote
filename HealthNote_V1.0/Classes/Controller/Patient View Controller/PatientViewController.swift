@@ -126,6 +126,12 @@ class PatientViewController: UIViewController, ImagePickerDelegate, UITableViewD
         mockPickers()
         
     }
+    func assignImageToProfile()
+    {
+        profilePicBase.image = UIImage(data:GlobalVariables.sharedManager.patientDetails.profilePicData)
+        profilePicRound.image = UIImage(data:GlobalVariables.sharedManager.patientDetails.profilePicData)
+
+    }
     func mockPickers()
     {
         let ageArray : NSMutableArray = NSMutableArray()
@@ -255,6 +261,8 @@ class PatientViewController: UIViewController, ImagePickerDelegate, UITableViewD
                 if GlobalVariables.sharedManager.patientDetails != nil
                 {
                     self.patientData(GlobalVariables.sharedManager.patientDetails as HNPatient)
+                    self.assignImageToProfile()
+
                 }else
                 {
                     let model = HNPatient()
@@ -276,6 +284,7 @@ class PatientViewController: UIViewController, ImagePickerDelegate, UITableViewD
         }else
         {
             patientData(GlobalVariables.sharedManager.patientDetails as HNPatient)
+            assignImageToProfile()
         }
     }
     func patientData(data : HNPatient)
