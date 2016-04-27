@@ -27,6 +27,7 @@ class HNParse: NSObject
                 (user: PFUser?, error: NSError?) -> Void in
                 if user != nil
                 {
+                    print(user)
                         withCompletionHandler(success: true, responseDic: "Succesfully loggef in")
                 } else {
                     withCompletionHandler(success: false, responseDic: "User not available")
@@ -45,7 +46,6 @@ class HNParse: NSObject
         user["phoneNo"]     = signUpObj.phoneNumber
         user["city"]        = signUpObj.city
         user["gender"]      = signUpObj.gender
-        
         user.signUpInBackgroundWithBlock {
             (succeeded: Bool, error: NSError?) -> Void in
             if let error = error {
@@ -209,4 +209,71 @@ class HNParse: NSObject
         })
 
     }
+    
+    //MARK:- Reminders Queries
+    func parseGetRemindersForCurrentUser(withCompletionHandler:(success : Bool, responseDic : AnyObject)->())
+    {
+
+        if let user = PFUser .currentUser()
+        {
+            if user.email != nil
+            {
+                    let query = PFQuery (className: "Reminder")
+//                    query.whereKey("patient_email", equalTo: user.email!)
+                query.whereKey("patient_email", equalTo: "tejas.chaudhari@sjsu.edu")
+
+                query .findObjectsInBackgroundWithBlock { (object, error) -> Void in
+                        
+                        if error == nil
+                        {
+                            if object?.count > 0
+                            {
+                                withCompletionHandler(success: true, responseDic:object!)
+                            }
+                            else
+                            {
+                                withCompletionHandler(success: false, responseDic:"")
+                            }
+                        }else
+                        {
+                            withCompletionHandler(success: false, responseDic:"")
+                        }
+                    }
+            }
+        }
+//        PFUser.currentUser()!.fetchInBackgroundWithBlock({ (currentUser: PFObject?, error: NSError?) -> Void in
+//            
+//            // Update your data
+//            
+//            if let user = currentUser as? PFUser {
+//                
+//                let email = user.email
+//                let query = PFQuery (className: "Reminder")
+//                query.whereKey("patient_email", equalTo: email!)
+//                
+//                query .findObjectsInBackgroundWithBlock { (object, error) -> Void in
+//                    
+//                    if error == nil
+//                    {
+//                        if object?.count > 0
+//                        {
+//                            print(object)
+//                            print(object![0])
+//                        }
+//                        else
+//                        {
+//                            withCompletionHandler(success: false, responseDic:"")
+//                        }
+//                    }else
+//                    {
+//                        withCompletionHandler(success: false, responseDic:"")
+//                        
+//                    }
+//                }
+//
+//            }
+//        })
+//
+    }
+
 }

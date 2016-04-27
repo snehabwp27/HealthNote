@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reminderTableCellId" rowHeight="117" id="KGk-i7-Jjw" customClass="ReminderTableViewCell" customModule="HealthNote_V1_0" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="249"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bWj-Z0-xIb">
+                        <rect key="frame" x="10" y="10" width="580" height="229"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZcN-r2-0t7">
+                                <rect key="frame" x="10" y="10" width="560" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKu-G7-55c">
+                                <rect key="frame" x="10" y="54" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWy-15-OFL">
+                                <rect key="frame" x="10" y="85" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkB-jH-FBx">
+                                <rect key="frame" x="10" y="189" width="224" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keH-bI-xBT">
+                                <rect key="frame" x="346" y="189" width="224" height="30"/>
+                                <state key="normal" title="Set Reminder"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RKu-G7-55c" firstAttribute="width" secondItem="ZcN-r2-0t7" secondAttribute="width" id="0ce-OE-Ofx"/>
+                            <constraint firstItem="RKu-G7-55c" firstAttribute="trailing" secondItem="ZcN-r2-0t7" secondAttribute="trailing" id="3jN-7e-ael"/>
+                            <constraint firstItem="cWy-15-OFL" firstAttribute="height" secondItem="RKu-G7-55c" secondAttribute="height" id="78T-G0-I2n"/>
+                            <constraint firstItem="cWy-15-OFL" firstAttribute="top" secondItem="RKu-G7-55c" secondAttribute="bottom" constant="10" id="7G1-QF-oyJ"/>
+                            <constraint firstAttribute="trailing" secondItem="ZcN-r2-0t7" secondAttribute="trailing" constant="10" id="7lY-aB-HDw"/>
+                            <constraint firstItem="qkB-jH-FBx" firstAttribute="leading" secondItem="ZcN-r2-0t7" secondAttribute="leading" id="BQz-p5-Lyg"/>
+                            <constraint firstItem="ZcN-r2-0t7" firstAttribute="top" secondItem="bWj-Z0-xIb" secondAttribute="top" constant="10" id="EY9-Y4-Imq"/>
+                            <constraint firstItem="qkB-jH-FBx" firstAttribute="width" secondItem="ZcN-r2-0t7" secondAttribute="width" multiplier="0.4" id="Jfo-QL-BGT"/>
+                            <constraint firstItem="ZcN-r2-0t7" firstAttribute="height" secondItem="bWj-Z0-xIb" secondAttribute="height" multiplier="0.15" id="Mum-dS-0oW"/>
+                            <constraint firstItem="RKu-G7-55c" firstAttribute="leading" secondItem="ZcN-r2-0t7" secondAttribute="leading" id="Plc-BG-ps2"/>
+                            <constraint firstItem="keH-bI-xBT" firstAttribute="height" secondItem="qkB-jH-FBx" secondAttribute="height" id="Tcu-SE-vhT"/>
+                            <constraint firstItem="RKu-G7-55c" firstAttribute="top" secondItem="ZcN-r2-0t7" secondAttribute="bottom" constant="10" id="TvC-18-LHb"/>
+                            <constraint firstItem="ZcN-r2-0t7" firstAttribute="leading" secondItem="bWj-Z0-xIb" secondAttribute="leading" constant="10" id="b3l-Ah-aQI"/>
+                            <constraint firstItem="keH-bI-xBT" firstAttribute="centerY" secondItem="qkB-jH-FBx" secondAttribute="centerY" id="eaG-Do-yal"/>
+                            <constraint firstItem="cWy-15-OFL" firstAttribute="leading" secondItem="RKu-G7-55c" secondAttribute="leading" id="epV-jc-fhD"/>
+                            <constraint firstItem="keH-bI-xBT" firstAttribute="width" secondItem="qkB-jH-FBx" secondAttribute="width" id="gp4-eV-gby"/>
+                            <constraint firstItem="cWy-15-OFL" firstAttribute="trailing" secondItem="RKu-G7-55c" secondAttribute="trailing" id="n9u-Eh-zxK"/>
+                            <constraint firstItem="keH-bI-xBT" firstAttribute="trailing" secondItem="ZcN-r2-0t7" secondAttribute="trailing" id="rXr-w7-l2p"/>
+                            <constraint firstAttribute="bottom" secondItem="qkB-jH-FBx" secondAttribute="bottom" constant="10" id="wx8-zp-0N1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bWj-Z0-xIb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="RXi-2b-UOq"/>
+                    <constraint firstAttribute="bottom" secondItem="bWj-Z0-xIb" secondAttribute="bottom" constant="10" id="VMN-vH-eBS"/>
+                    <constraint firstItem="bWj-Z0-xIb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="VpL-cF-wdd"/>
+                    <constraint firstAttribute="trailing" secondItem="bWj-Z0-xIb" secondAttribute="trailing" constant="10" id="mix-jB-AA1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="baseView" destination="bWj-Z0-xIb" id="hyy-gN-shS"/>
+                <outlet property="endDate" destination="cWy-15-OFL" id="WHJ-Ba-qI7"/>
+                <outlet property="medicine" destination="ZcN-r2-0t7" id="8Ue-Yp-1VI"/>
+                <outlet property="reminderButton" destination="keH-bI-xBT" id="CKF-ng-ZNu"/>
+                <outlet property="startDate" destination="RKu-G7-55c" id="fHj-fn-QaC"/>
+                <outlet property="timing" destination="qkB-jH-FBx" id="89M-1d-Cau"/>
+            </connections>
+            <point key="canvasLocation" x="324" y="247"/>
+        </tableViewCell>
+    </objects>
+</document>

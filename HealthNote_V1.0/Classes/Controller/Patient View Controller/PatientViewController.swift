@@ -60,7 +60,7 @@ class PatientViewController: UIViewController, ImagePickerDelegate, UITableViewD
     func addRightBarButtonWithImage()
     {
         let button = UIButton(type: .Custom)
-        button.setImage(UIImage(named: "Home-520"), forState: UIControlState.Normal)
+        button.setImage(UIImage(named: "addPatientDetails"), forState: UIControlState.Normal)
         button.addTarget(self, action:"addDetailsToParse", forControlEvents: UIControlEvents.TouchUpInside)
         button.frame=CGRectMake(0, 0, 30, 30)
         let barButton = UIBarButtonItem(customView: button)

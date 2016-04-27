@@ -127,7 +127,8 @@ class RegisterViewController: UIViewController
             obj.phoneNumber = txtPhoneNo.text
             obj.city        = txtCity.text
             obj.gender      = txtGender.text
-            
+            obj.email       = txtEmail.text
+
             registerParseWithUserObj(obj)
         }else
         {

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		131256321CD1351D00FE5FAE /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131256311CD1351D00FE5FAE /* RemindersViewController.swift */; };
+		131256341CD155B100FE5FAE /* ReminderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131256331CD155B100FE5FAE /* ReminderModel.swift */; };
+		131256371CD15AE700FE5FAE /* ReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131256351CD15AE700FE5FAE /* ReminderTableViewCell.swift */; };
+		131256381CD15AE700FE5FAE /* ReminderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 131256361CD15AE700FE5FAE /* ReminderTableViewCell.xib */; };
 		1357BF8B1CCD64570082103E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1357BF891CCD64570082103E /* Main.storyboard */; };
 		1357BF8E1CCD69960082103E /* PatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1357BF8D1CCD69960082103E /* PatientViewController.swift */; };
 		135FA0111CCE7FD600B782FE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FA0101CCE7FD600B782FE /* SettingsViewController.swift */; };
@@ -38,6 +42,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		131256311CD1351D00FE5FAE /* RemindersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindersViewController.swift; sourceTree = "<group>"; };
+		131256331CD155B100FE5FAE /* ReminderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderModel.swift; sourceTree = "<group>"; };
+		131256351CD15AE700FE5FAE /* ReminderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderTableViewCell.swift; sourceTree = "<group>"; };
+		131256361CD15AE700FE5FAE /* ReminderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReminderTableViewCell.xib; sourceTree = "<group>"; };
 		1357BF8A1CCD64570082103E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HealthNote_V1.0/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		1357BF8D1CCD69960082103E /* PatientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientViewController.swift; sourceTree = "<group>"; };
 		135FA0101CCE7FD600B782FE /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +153,7 @@
 				1357BF8C1CCD696A0082103E /* Patient View Controller */,
 				13C5F2A71CA5EB4000D4220B /* ViewController.swift */,
 				135FA0101CCE7FD600B782FE /* SettingsViewController.swift */,
+				131256311CD1351D00FE5FAE /* RemindersViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -184,6 +193,7 @@
 			children = (
 				13D70DBF1CB06CD000DD0291 /* Parse Query */,
 				13C5F2AD1CA5EB4000D4220B /* MenuTableModel.swift */,
+				131256331CD155B100FE5FAE /* ReminderModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -206,6 +216,8 @@
 				13C5F2B31CA5EB4000D4220B /* MenuTableViewCell.xib */,
 				13713F271CD0505200019068 /* NormalTableViewCell.swift */,
 				13713F281CD0505200019068 /* NormalTableViewCell.xib */,
+				131256351CD15AE700FE5FAE /* ReminderTableViewCell.swift */,
+				131256361CD15AE700FE5FAE /* ReminderTableViewCell.xib */,
 			);
 			path = "Custom Cell";
 			sourceTree = "<group>";
@@ -329,6 +341,7 @@
 				1357BF8B1CCD64570082103E /* Main.storyboard in Resources */,
 				13713F2A1CD0505200019068 /* NormalTableViewCell.xib in Resources */,
 				13C5F2B61CA5EB4000D4220B /* Assets.xcassets in Resources */,
+				131256381CD15AE700FE5FAE /* ReminderTableViewCell.xib in Resources */,
 				13C5F2C41CA5EB4000D4220B /* DashboardCollectionViewCell.xib in Resources */,
 				13C5F2C71CA5EB4000D4220B /* Info.plist in Resources */,
 			);
@@ -393,8 +406,10 @@
 				13713F2C1CD0596C00019068 /* HNPatient.swift in Sources */,
 				13C5F2C31CA5EB4000D4220B /* DashboardCollectionViewCell.swift in Sources */,
 				13C5F2C51CA5EB4000D4220B /* MenuTableViewCell.swift in Sources */,
+				131256321CD1351D00FE5FAE /* RemindersViewController.swift in Sources */,
 				13D171671CB4562D0048649E /* HNUserRegistration.swift in Sources */,
 				13EF07CD1CA6AF54007CB41B /* RegisterViewController.swift in Sources */,
+				131256371CD15AE700FE5FAE /* ReminderTableViewCell.swift in Sources */,
 				13C5F2C21CA5EB4000D4220B /* MenuTableModel.swift in Sources */,
 				13C5F2BE1CA5EB4000D4220B /* ViewController.swift in Sources */,
 				13C5F2C11CA5EB4000D4220B /* SingletonStoryboard.swift in Sources */,
@@ -405,6 +420,7 @@
 				13C5F2B51CA5EB4000D4220B /* AppDelegate.swift in Sources */,
 				13D70DC11CB06CEA00DD0291 /* HNParseLogin.swift in Sources */,
 				13C5F2C01CA5EB4000D4220B /* Singleton.swift in Sources */,
+				131256341CD155B100FE5FAE /* ReminderModel.swift in Sources */,
 				1357BF8E1CCD69960082103E /* PatientViewController.swift in Sources */,
 				13C5F2BB1CA5EB4000D4220B /* PLoginViewController.swift in Sources */,
 				13713F2E1CD0615400019068 /* GlobalVariables.swift in Sources */,

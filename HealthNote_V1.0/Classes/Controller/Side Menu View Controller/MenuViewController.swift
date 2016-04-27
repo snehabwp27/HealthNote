@@ -69,13 +69,13 @@ class MenuViewController: UIViewController
     // Getting Cell Names
     func getCellNames() -> [String]
     {
-        return ["Dashboard", "My Chart", "Good habbits", "Social", "Edit Profile", "Logout"]
+        return ["Dashboard", "Patients", "Reminders", "Social", "Edit Profile", "Logout"]
     }
     
     // Getting Cell Images
     func getCellImageNames() -> [String]
     {
-        return ["Home-520", "myChartMenu", "livingBetterMenu", "socialNetowrking", "editProfile", "logout"]
+        return ["Home-520", "patientDetails", "reminders", "socialNetowrking", "editProfile", "logout"]
     }
     // Did Select Table view item
     func pushVCForIndexPath(indexPath : NSIndexPath)
@@ -87,10 +87,6 @@ class MenuViewController: UIViewController
             SingletonStoryboard.sharedInstance.dashboardPushFromSingleton(self, withCompletionHAndler: { (success) -> Void in
                 
             })
-
-//            SideMenuManager.menuLeftNavigationController?.dismissViewControllerAnimated(false, completion: { () -> Void in
-//
-//            })
             
             break //
             
@@ -100,7 +96,7 @@ class MenuViewController: UIViewController
             break //
             
         case 2:
-            let vc = SingletonStoryboard.sharedInstance.getMainStoryboad().instantiateViewControllerWithIdentifier("settingsVCId")
+            let vc = SingletonStoryboard.sharedInstance.getMainStoryboad().instantiateViewControllerWithIdentifier("remindersVCId")
             self.navigationController?.pushViewController(vc, animated: true)
 
             break //

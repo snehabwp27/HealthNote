@@ -8,6 +8,8 @@
 
 import UIKit
 import SwiftLoader
+import EventKit
+
 
 class Singleton: NSObject
 {
@@ -89,6 +91,28 @@ class Singleton: NSObject
         btn.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).CGColor
         btn.layer.cornerRadius = cornerRadius
     }
+    func applyEffectsWithColor(btn : UIView, titleColor : UIColor, backgroundColor : UIColor)
+    {
+        let borderAlpha : CGFloat = 0.7
+        let cornerRadius : CGFloat = 5.0
+        if btn .isKindOfClass(UIButton)
+        {
+            (btn as! UIButton).setTitleColor(titleColor, forState: UIControlState.Normal)
+        }
+        btn.backgroundColor = backgroundColor
+        btn.layer.borderWidth = 1.0
+        btn.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).CGColor
+        btn.layer.cornerRadius = cornerRadius
+    }
+
+    func applyEffectToUIView(yourView : UIView)
+    {
+        yourView.layer.shadowColor = UIColor.whiteColor().CGColor
+        yourView.layer.shadowOpacity = 1
+        yourView.layer.shadowOffset = CGSizeZero
+        yourView.layer.shadowRadius = 2
+    }
+
     //MARK: - Email address validations.
     func isEmailAddressValid(testStr:String) -> Bool
     {
@@ -97,6 +121,87 @@ class Singleton: NSObject
         let range = testStr.rangeOfString(emailRegEx, options:.RegularExpressionSearch)
         let result = range != nil ? true : false
         return result
+    }
+
+    //MARK:- NSDate
+    func getDateFromString(str : String) -> NSDate
+    {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        return  dateFormatter.dateFromString( str )!
+    }
+    
+    
+    //EKEvent
+    func saveEvent(statDate : NSDate, endDate : NSDate, title : String, message : String, withCompletionHandler:(success : Bool, response : String)->())
+    {
+        // 1
+        let eventStore = EKEventStore()
+        
+        // 2
+        switch EKEventStore.authorizationStatusForEntityType(.Event) {
+        case .Authorized:
+            self.insertEvent(eventStore, statDate: statDate, endDate: endDate, title: title, message: message, withCompletionHandler: { (success, response) -> () in
+                if success == true
+                {
+                    withCompletionHandler(success: true, response: response)
+                }else
+                {
+                    withCompletionHandler(success: false, response: response)
+                }
+
+            })
+        case .Denied:
+            print("Access denied")
+        case .NotDetermined:
+            // 3
+            eventStore.requestAccessToEntityType(.Event, completion: { (success, error) -> Void in
+                if success && error == nil
+                {
+                    self.insertEvent(eventStore, statDate: statDate, endDate: endDate, title: title, message: message, withCompletionHandler: { (success, response) -> () in
+                        
+                        if success == true
+                        {
+                            withCompletionHandler(success: true, response: response)
+                        }else
+                        {
+                            withCompletionHandler(success: false, response: response)
+                        }
+                    })
+                    
+                }
+            })        default:
+            print("Case Default")
+        }
+
+    }
+    func insertEvent(store: EKEventStore,statDate : NSDate, endDate : NSDate, title : String, message : String, withCompletionHandler:(success : Bool, response : String)->())
+    {
+        // 1
+
+                // Create Event
+                let event = EKEvent(eventStore: store)
+                event.calendar = store.defaultCalendarForNewEvents
+                
+                event.title = title
+                event.notes = message
+                event.startDate = statDate
+                event.endDate = endDate
+                event.addAlarm(EKAlarm(relativeOffset: -5.0))
+
+                // Save Event in Calendar
+                do
+                {
+                    try store.saveEvent(event, span: .ThisEvent)
+                    print(event.eventIdentifier)
+                    withCompletionHandler(success: true, response: event.eventIdentifier)
+
+                }catch
+                {
+                    withCompletionHandler(success: false, response: "")
+
+                }
+        
     }
 
 }
