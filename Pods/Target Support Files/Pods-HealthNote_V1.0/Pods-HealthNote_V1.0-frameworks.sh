@@ -84,16 +84,26 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-HealthNote_V1.0/ActionSheetPicker_3_0.framework"
   install_framework "Pods-HealthNote_V1.0/Bolts.framework"
   install_framework "Pods-HealthNote_V1.0/IQKeyboardManagerSwift.framework"
+  install_framework "Pods-HealthNote_V1.0/ImagePicker.framework"
   install_framework "Pods-HealthNote_V1.0/Parse.framework"
+  install_framework "Pods-HealthNote_V1.0/Popover.framework"
+  install_framework "Pods-HealthNote_V1.0/RSKGrowingTextView.framework"
+  install_framework "Pods-HealthNote_V1.0/RSKPlaceholderTextView.framework"
   install_framework "Pods-HealthNote_V1.0/SideMenu.framework"
   install_framework "Pods-HealthNote_V1.0/SwiftLoader.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-HealthNote_V1.0/ActionSheetPicker_3_0.framework"
   install_framework "Pods-HealthNote_V1.0/Bolts.framework"
   install_framework "Pods-HealthNote_V1.0/IQKeyboardManagerSwift.framework"
+  install_framework "Pods-HealthNote_V1.0/ImagePicker.framework"
   install_framework "Pods-HealthNote_V1.0/Parse.framework"
+  install_framework "Pods-HealthNote_V1.0/Popover.framework"
+  install_framework "Pods-HealthNote_V1.0/RSKGrowingTextView.framework"
+  install_framework "Pods-HealthNote_V1.0/RSKPlaceholderTextView.framework"
   install_framework "Pods-HealthNote_V1.0/SideMenu.framework"
   install_framework "Pods-HealthNote_V1.0/SwiftLoader.framework"
 fi

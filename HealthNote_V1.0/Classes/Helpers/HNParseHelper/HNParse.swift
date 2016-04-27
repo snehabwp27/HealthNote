@@ -27,17 +27,8 @@ class HNParse: NSObject
                 (user: PFUser?, error: NSError?) -> Void in
                 if user != nil
                 {
-//                    if user!["emailVerified"] as! Bool == true
-//                    {
-                        // Do stuff after successful login.
                         withCompletionHandler(success: true, responseDic: "Succesfully loggef in")
-//                    }
-//                    else
-//                    {
-//                        withCompletionHandler(success: false, responseDic: "Email not verified")
-//                    }
                 } else {
-                    // The login failed. Check error to see why.
                     withCompletionHandler(success: false, responseDic: "User not available")
                 }
             }
@@ -80,5 +71,118 @@ class HNParse: NSObject
         PFUser.logOut()
         withCompletionHandler(success: true, responseDic: "")
         
+    }
+    
+    //MARK:- Patients
+    func parseGetPatientDetailsForCurrentUser(withCompletionHandler:(success : Bool, responseDic : AnyObject)->())
+    {
+        
+        let user = PFUser.currentUser()
+        let query = PFQuery(className: "Patient")
+        query.whereKey("patientUser", equalTo: user!)
+        
+        query .findObjectsInBackgroundWithBlock { (object, error) -> Void in
+            
+            if error == nil
+            {
+                if object?.count > 0
+                {
+                    self.savePatientDetailsGlobalVariable(object![0])
+                }
+                 withCompletionHandler(success: true, responseDic: object!)
+            }else
+            {
+                withCompletionHandler(success: false, responseDic:"")
+
+            }
+        }
+
+    }
+    func savePatientDetailsGlobalVariable(object : PFObject)
+    {
+        let model = HNPatient()
+        model.name              =  object["name"] as! String
+        model.age               =  object["age"] as! String
+        model.gender            =  object["gender"] as! String
+        model.height            =  object["height"] as! String
+        model.weight            =  object["weight"] as! String
+        model.allergies         =  object["allergies"] as! String
+        model.medicalHistory    =  object["medicalHistory"] as! String
+        model.emailId           =  object["emailId"] as! String
+        model.address           =  object["address"] as! String
+        model.phoneNumber       =  object["phoneNumber"] as! String
+        model.profilePicData    =  object["profilePicData"] as! NSData
+        GlobalVariables.sharedManager.patientDetails = model
+
+    }
+    func parseSavePatientDetailsForCurrentUser(model : HNPatient, withCompletionHandler:(success : Bool, responseDic : AnyObject)->())
+    {
+        HNParse.sharedInstance.parseGetPatientDetailsForCurrentUser({ (success, responseDic) -> () in
+            if success == true && responseDic.isKindOfClass(PFObject)
+            {
+                let obj = responseDic as! PFObject
+                self.startSavingWithModel(model, obj: obj, withCompletionHandler: { (success, responseDic) -> () in
+                    if success == true
+                    {
+                        withCompletionHandler(success: true, responseDic: "Saved succesfully")
+                        
+                    }else
+                    {
+                        withCompletionHandler(success: false, responseDic: " ")
+                    }
+
+                })
+            }else
+            {
+                let obj : PFObject = PFObject(className: "Patient")
+                self.startSavingWithModel(model, obj: obj, withCompletionHandler: { (success, responseDic) -> () in
+                    if success == true
+                    {
+                        withCompletionHandler(success: true, responseDic: "Saved succesfully")
+                        
+                    }else
+                    {
+                        withCompletionHandler(success: false, responseDic: " ")
+                    }
+                })
+            }
+        })
+    }
+
+    func startSavingWithModel(model : HNPatient, obj : PFObject, withCompletionHandler:(success : Bool, responseDic : AnyObject)->())
+    {
+        // First I am saving file to parse
+        var fName : String = String()
+        if let nameModel = model.phoneNumber
+        {
+            fName = nameModel
+            fName = fName + ".jpeg"
+        }
+        let file = PFFile(name:fName, data:model.profilePicData)
+        obj["name"] = model.name
+        obj["age"] = model.age
+        obj["gender"] = model.gender
+        obj["height"] = model.height
+        obj["weight"] = model.weight
+        obj["allergies"] = model.allergies
+        obj["medicalHistory"] = model.medicalHistory
+        obj["emailId"]  = model.emailId
+        obj["address"] = model.address
+        obj["phoneNumber"] = model.phoneNumber
+        obj["profilePicData"] = file
+        obj["patientUser"] = PFUser.currentUser()
+        
+        obj.saveInBackgroundWithBlock({ (success, error) -> Void in
+            
+            if success == true && error == nil
+            {
+                withCompletionHandler(success: true, responseDic: "Saved succesfully")
+                
+            }else
+            {
+                withCompletionHandler(success: false, responseDic: " ")
+            }
+        })
+
     }
 }

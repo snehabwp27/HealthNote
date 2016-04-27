@@ -72,14 +72,26 @@ class PLoginViewController: UIViewController
                     HNParse.sharedInstance.parseSignInUserWithParameters(obj, withCompletionHandler:
                         { (success, responseDic) -> () in
                             
-                            Singleton.sharedInstance.hideLoader()
 
                             if success == true
                             {
-                                self.loginVCPushFunc()
+                                HNParse.sharedInstance.parseGetPatientDetailsForCurrentUser({ (success, responseDic) -> () in
+                                    Singleton.sharedInstance.hideLoader()
+
+                                    if success == true
+                                    {
+                                        self.loginVCPushFunc()
+                                    }else
+                                    {
+                                        //Show Alert Login Failed according to response message
+                                        Singleton.sharedInstance.showAlertWithText("Failed", text: responseDic as! String , target: self)
+                                    }
+                                })
                             }else
                             {
                                 //Show Alert Login Failed according to response message
+                                Singleton.sharedInstance.hideLoader()
+
                                 Singleton.sharedInstance.showAlertWithText("Failed", text: responseDic as! String , target: self)
                             }
                         })

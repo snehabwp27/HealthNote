@@ -42,12 +42,12 @@ class GetStartedVC: UIViewController {
     
     @IBAction func getStartedPressed(sender: AnyObject)
     {
-//        SingletonStoryboard.sharedInstance.loginPushFromSingleton(self) { (success) -> Void in
-//            
-//        }
-        
-        SingletonStoryboard.sharedInstance.dashboardPushFromSingleton(self) { (success) -> Void in
+        SingletonStoryboard.sharedInstance.loginPushFromSingleton(self) { (success) -> Void in
             
         }
+        
+//        SingletonStoryboard.sharedInstance.dashboardPushFromSingleton(self) { (success) -> Void in
+//            
+//        }
     }
 }

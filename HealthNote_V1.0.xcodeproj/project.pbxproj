@@ -10,6 +10,10 @@
 		1357BF8B1CCD64570082103E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1357BF891CCD64570082103E /* Main.storyboard */; };
 		1357BF8E1CCD69960082103E /* PatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1357BF8D1CCD69960082103E /* PatientViewController.swift */; };
 		135FA0111CCE7FD600B782FE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FA0101CCE7FD600B782FE /* SettingsViewController.swift */; };
+		13713F291CD0505200019068 /* NormalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13713F271CD0505200019068 /* NormalTableViewCell.swift */; };
+		13713F2A1CD0505200019068 /* NormalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13713F281CD0505200019068 /* NormalTableViewCell.xib */; };
+		13713F2C1CD0596C00019068 /* HNPatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13713F2B1CD0596C00019068 /* HNPatient.swift */; };
+		13713F2E1CD0615400019068 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13713F2D1CD0615400019068 /* GlobalVariables.swift */; };
 		13C2C7A81CA60092009CEE23 /* GetStartedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C2C7A71CA60092009CEE23 /* GetStartedVC.swift */; };
 		13C5F2B51CA5EB4000D4220B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C5F2951CA5EB4000D4220B /* AppDelegate.swift */; };
 		13C5F2B61CA5EB4000D4220B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13C5F2981CA5EB4000D4220B /* Assets.xcassets */; };
@@ -37,6 +41,10 @@
 		1357BF8A1CCD64570082103E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HealthNote_V1.0/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		1357BF8D1CCD69960082103E /* PatientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientViewController.swift; sourceTree = "<group>"; };
 		135FA0101CCE7FD600B782FE /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		13713F271CD0505200019068 /* NormalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalTableViewCell.swift; sourceTree = "<group>"; };
+		13713F281CD0505200019068 /* NormalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NormalTableViewCell.xib; sourceTree = "<group>"; };
+		13713F2B1CD0596C00019068 /* HNPatient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNPatient.swift; sourceTree = "<group>"; };
+		13713F2D1CD0615400019068 /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		13C2C7A71CA60092009CEE23 /* GetStartedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStartedVC.swift; sourceTree = "<group>"; };
 		13C5F2951CA5EB4000D4220B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13C5F2981CA5EB4000D4220B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -166,6 +174,7 @@
 				13C5F2A91CA5EB4000D4220B /* Constant.swift */,
 				13C5F2AA1CA5EB4000D4220B /* Singleton.swift */,
 				13C5F2AB1CA5EB4000D4220B /* SingletonStoryboard.swift */,
+				13713F2D1CD0615400019068 /* GlobalVariables.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -195,6 +204,8 @@
 				13C5F2B11CA5EB4000D4220B /* DashboardCollectionViewCell.xib */,
 				13C5F2B21CA5EB4000D4220B /* MenuTableViewCell.swift */,
 				13C5F2B31CA5EB4000D4220B /* MenuTableViewCell.xib */,
+				13713F271CD0505200019068 /* NormalTableViewCell.swift */,
+				13713F281CD0505200019068 /* NormalTableViewCell.xib */,
 			);
 			path = "Custom Cell";
 			sourceTree = "<group>";
@@ -213,6 +224,7 @@
 				13D70DC01CB06CEA00DD0291 /* HNParseLogin.swift */,
 				13D70DC21CB07CE700DD0291 /* HNParseSignUp.swift */,
 				13D171661CB4562D0048649E /* HNUserRegistration.swift */,
+				13713F2B1CD0596C00019068 /* HNPatient.swift */,
 			);
 			path = "Parse Query";
 			sourceTree = "<group>";
@@ -315,6 +327,7 @@
 			files = (
 				13C5F2C61CA5EB4000D4220B /* MenuTableViewCell.xib in Resources */,
 				1357BF8B1CCD64570082103E /* Main.storyboard in Resources */,
+				13713F2A1CD0505200019068 /* NormalTableViewCell.xib in Resources */,
 				13C5F2B61CA5EB4000D4220B /* Assets.xcassets in Resources */,
 				13C5F2C41CA5EB4000D4220B /* DashboardCollectionViewCell.xib in Resources */,
 				13C5F2C71CA5EB4000D4220B /* Info.plist in Resources */,
@@ -377,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13C5F2BF1CA5EB4000D4220B /* Constant.swift in Sources */,
+				13713F2C1CD0596C00019068 /* HNPatient.swift in Sources */,
 				13C5F2C31CA5EB4000D4220B /* DashboardCollectionViewCell.swift in Sources */,
 				13C5F2C51CA5EB4000D4220B /* MenuTableViewCell.swift in Sources */,
 				13D171671CB4562D0048649E /* HNUserRegistration.swift in Sources */,
@@ -387,11 +401,13 @@
 				13D70DBD1CB0685A00DD0291 /* HNParse.swift in Sources */,
 				13C2C7A81CA60092009CEE23 /* GetStartedVC.swift in Sources */,
 				13C5F2BD1CA5EB4000D4220B /* MenuViewController.swift in Sources */,
+				13713F291CD0505200019068 /* NormalTableViewCell.swift in Sources */,
 				13C5F2B51CA5EB4000D4220B /* AppDelegate.swift in Sources */,
 				13D70DC11CB06CEA00DD0291 /* HNParseLogin.swift in Sources */,
 				13C5F2C01CA5EB4000D4220B /* Singleton.swift in Sources */,
 				1357BF8E1CCD69960082103E /* PatientViewController.swift in Sources */,
 				13C5F2BB1CA5EB4000D4220B /* PLoginViewController.swift in Sources */,
+				13713F2E1CD0615400019068 /* GlobalVariables.swift in Sources */,
 				13D70DC31CB07CE700DD0291 /* HNParseSignUp.swift in Sources */,
 				135FA0111CCE7FD600B782FE /* SettingsViewController.swift in Sources */,
 			);

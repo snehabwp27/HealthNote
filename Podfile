@@ -9,5 +9,10 @@ pod 'SideMenu'
 pod 'IQKeyboardManagerSwift', '3.3.4'
 pod 'Parse'
 pod 'SwiftLoader'
+pod 'ImagePicker'
+pod 'Popover'
+pod 'RSKGrowingTextView'
+pod 'ActionSheetPicker-3.0'
+
 
 end

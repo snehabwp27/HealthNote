@@ -1,21 +1,36 @@
 PODS:
+  - ActionSheetPicker-3.0 (2.0.5)
   - Bolts/Tasks (1.6.0)
+  - ImagePicker (1.2)
   - IQKeyboardManagerSwift (3.3.4)
   - Parse (1.13.0):
     - Bolts/Tasks (~> 1.6)
+  - Popover (0.9.0)
+  - RSKGrowingTextView (1.0.1):
+    - RSKPlaceholderTextView (= 1.0.0)
+  - RSKPlaceholderTextView (1.0.0)
   - SideMenu (1.0.3)
   - SwiftLoader (0.2.5)
 
 DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - ImagePicker
   - IQKeyboardManagerSwift (= 3.3.4)
   - Parse
+  - Popover
+  - RSKGrowingTextView
   - SideMenu
   - SwiftLoader
 
 SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: 8312778b6815578e6a86d630fbcf31dc94c534e7
   Bolts: f52a250053bb517ca874523c3913776359ab3def
+  ImagePicker: 85f14ed6872f46c08d210077b5540a890a6cd151
   IQKeyboardManagerSwift: 6f2290d093f5269dc07bdae8bc58e968cf9c4738
   Parse: f51c24d2feb412e4b2d6cc73d37cb24e8d0089bc
+  Popover: e5a2cbfa29bb982c95cff0d7eb94f47173dbfbcc
+  RSKGrowingTextView: 585888654fb5007e13089a71923ce78e53a6f0d4
+  RSKPlaceholderTextView: a34174067f43aa176abe0fc4de9f6ce29f2306c7
   SideMenu: 166ea23f143a8df84d0cf2170057793e26f0ba9e
   SwiftLoader: 12d7a6f661f5e9a2c9a72003e7dd6162f4ff0cc4
 
