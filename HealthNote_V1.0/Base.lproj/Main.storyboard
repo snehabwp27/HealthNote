@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bah-YG-t6x">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bah-YG-t6x">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -325,6 +325,7 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUe-0x-NXg">
                                         <rect key="frame" x="30" y="388" width="540" height="45"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="RegisterPre">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -334,6 +335,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDU-e9-nmp">
                                         <rect key="frame" x="30" y="278" width="540" height="45"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Login">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -455,15 +457,16 @@
                                             <constraint firstAttribute="width" secondItem="8ee-z7-piV" secondAttribute="height" multiplier="1:1" id="aCn-xg-7ce"/>
                                         </constraints>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJm-2n-lGQ">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJm-2n-lGQ">
                                         <rect key="frame" x="76" y="289" width="450" height="214"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEa-ib-P48">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEa-ib-P48">
                                         <rect key="frame" x="76" y="546" width="450" height="34"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="Get Started"/>
                                         <connections>
                                             <action selector="getStartedPressed:" destination="XXU-xO-X42" eventType="touchUpInside" id="116-ej-cZi"/>
@@ -622,16 +625,16 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p5T-TN-qzR">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rub-y1-9x9">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rub-y1-9x9">
                                         <rect key="frame" x="10" y="10" width="580" height="580"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="dataSource" destination="4Q5-8i-7J7" id="5cK-6F-2Yr"/>
                                             <outlet property="delegate" destination="4Q5-8i-7J7" id="pDW-jU-DAn"/>
                                         </connections>
                                     </tableView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.91372549020000005" green="0.3803921569" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="rub-y1-9x9" firstAttribute="centerX" secondItem="p5T-TN-qzR" secondAttribute="centerX" id="28T-ei-qYy"/>
                                     <constraint firstItem="rub-y1-9x9" firstAttribute="leading" secondItem="p5T-TN-qzR" secondAttribute="leading" constant="10" id="6DE-QM-Ezn"/>
@@ -652,7 +655,6 @@
                                 </variation>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="p5T-TN-qzR" firstAttribute="centerX" secondItem="w6I-3i-gBm" secondAttribute="centerX" id="TJ8-Q5-8X7"/>
                             <constraint firstItem="p5T-TN-qzR" firstAttribute="width" secondItem="w6I-3i-gBm" secondAttribute="width" id="b2K-Yc-mAx"/>
@@ -696,6 +698,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </view>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <blurEffect style="light"/>
                                             </visualEffectView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilePicDemo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="EKS-bs-Nrs">
@@ -786,7 +789,7 @@
         <image name="getStartedBG" width="250" height="444"/>
         <image name="getStartedBook" width="106" height="133"/>
         <image name="googleplusSphere" width="153" height="153"/>
-        <image name="loginBG" width="248" height="464"/>
+        <image name="loginBG" width="750" height="1334"/>
         <image name="profilePicDemo.jpg" width="460" height="259"/>
         <image name="textLogo" width="240" height="150"/>
         <image name="twitterSphere" width="153" height="153"/>
