@@ -1,0 +1,45 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.0.5)
+  - Alamofire (3.3.1)
+  - Bolts/Tasks (1.7.0)
+  - ImagePicker (1.2)
+  - IQKeyboardManagerSwift (4.0.2)
+  - Parse (1.13.0):
+    - Bolts/Tasks (~> 1.6)
+  - Popover (0.9.0)
+  - RSKGrowingTextView (1.0.1):
+    - RSKPlaceholderTextView (= 1.0.0)
+  - RSKPlaceholderTextView (1.0.0)
+  - SideMenu (1.1.5)
+  - SwiftLoader (0.2.5)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - Alamofire
+  - ImagePicker
+  - IQKeyboardManagerSwift
+  - Parse
+  - Popover
+  - RSKGrowingTextView
+  - SideMenu
+  - SwiftLoader
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: 8312778b6815578e6a86d630fbcf31dc94c534e7
+  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
+  ImagePicker: 85f14ed6872f46c08d210077b5540a890a6cd151
+  IQKeyboardManagerSwift: 2f2c19c509f67c4c0df2826db54033d3e090ce65
+  Parse: f51c24d2feb412e4b2d6cc73d37cb24e8d0089bc
+  Popover: e5a2cbfa29bb982c95cff0d7eb94f47173dbfbcc
+  RSKGrowingTextView: 585888654fb5007e13089a71923ce78e53a6f0d4
+  RSKPlaceholderTextView: a34174067f43aa176abe0fc4de9f6ce29f2306c7
+  SideMenu: c7eb4edeb570469a70c6503306f5a97df08e8e9d
+  SwiftLoader: 12d7a6f661f5e9a2c9a72003e7dd6162f4ff0cc4
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+PODFILE CHECKSUM: 57a270e338f358cf55553a92072174a1e69c690c
+
+COCOAPODS: 1.0.0.beta.8

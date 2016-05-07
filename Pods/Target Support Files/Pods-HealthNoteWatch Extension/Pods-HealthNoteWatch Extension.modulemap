@@ -1,0 +1,6 @@
+framework module Pods_HealthNoteWatch_Extension {
+  umbrella header "Pods-HealthNoteWatch Extension-umbrella.h"
+
+  export *
+  module * { export * }
+}

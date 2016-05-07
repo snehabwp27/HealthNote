@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="listTableCellId" rowHeight="57" id="KGk-i7-Jjw" customClass="NormalTableViewCell" customModule="HealthNote_V1_0" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6de-KW-shw">
+                        <rect key="frame" x="232" y="0.0" width="360" height="199"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.94999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="0dB-mj-SUn">
+                        <rect key="frame" x="19" y="0.0" width="203" height="199"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="6de-KW-shw" firstAttribute="centerY" secondItem="0dB-mj-SUn" secondAttribute="centerY" id="0rB-k2-8da"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6de-KW-shw" secondAttribute="trailing" id="2Xy-Ep-Agt"/>
+                    <constraint firstItem="6de-KW-shw" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.6" id="ERa-QR-fWw"/>
+                    <constraint firstItem="0dB-mj-SUn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="11" id="XlL-7Z-B8Q"/>
+                    <constraint firstItem="6de-KW-shw" firstAttribute="leading" secondItem="0dB-mj-SUn" secondAttribute="trailing" constant="10" id="e0X-go-H1w"/>
+                    <constraint firstItem="0dB-mj-SUn" firstAttribute="height" secondItem="6de-KW-shw" secondAttribute="height" id="ev4-Rt-mtg"/>
+                    <constraint firstItem="0dB-mj-SUn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="i3N-YK-wtc"/>
+                    <constraint firstItem="6de-KW-shw" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="j5t-zn-cwt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="detailValLbl" destination="6de-KW-shw" id="Tvh-Vf-dgk"/>
+                <outlet property="nameLbl" destination="0dB-mj-SUn" id="TRx-W2-PvS"/>
+            </connections>
+            <point key="canvasLocation" x="354" y="398"/>
+        </tableViewCell>
+    </objects>
+</document>

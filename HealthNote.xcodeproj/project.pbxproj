@@ -1,0 +1,1092 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13C2C7A81CA60092009CEE23 /* GetStartedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C2C7A71CA60092009CEE23 /* GetStartedVC.swift */; };
+		13C5F2B51CA5EB4000D4220B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C5F2951CA5EB4000D4220B /* AppDelegate.swift */; };
+		13C5F2B61CA5EB4000D4220B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13C5F2981CA5EB4000D4220B /* Assets.xcassets */; };
+		13C5F2BB1CA5EB4000D4220B /* PLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C5F2A31CA5EB4000D4220B /* PLoginViewController.swift */; };
+		13C5F2BD1CA5EB4000D4220B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C5F2A61CA5EB4000D4220B /* MenuViewController.swift */; };
+		13C5F2BE1CA5EB4000D4220B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C5F2A71CA5EB4000D4220B /* ViewController.swift */; };
+		13C5F2BF1CA5EB4000D4220B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C5F2A91CA5EB4000D4220B /* Constant.swift */; };
+		13C5F2C01CA5EB4000D4220B /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C5F2AA1CA5EB4000D4220B /* Singleton.swift */; };
+		13C5F2C11CA5EB4000D4220B /* SingletonStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C5F2AB1CA5EB4000D4220B /* SingletonStoryboard.swift */; };
+		13C5F2C21CA5EB4000D4220B /* MenuTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C5F2AD1CA5EB4000D4220B /* MenuTableModel.swift */; };
+		13C5F2C31CA5EB4000D4220B /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C5F2B01CA5EB4000D4220B /* DashboardCollectionViewCell.swift */; };
+		13C5F2C41CA5EB4000D4220B /* DashboardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13C5F2B11CA5EB4000D4220B /* DashboardCollectionViewCell.xib */; };
+		13C5F2C51CA5EB4000D4220B /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C5F2B21CA5EB4000D4220B /* MenuTableViewCell.swift */; };
+		13C5F2C61CA5EB4000D4220B /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13C5F2B31CA5EB4000D4220B /* MenuTableViewCell.xib */; };
+		13C5F2C71CA5EB4000D4220B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13C5F2B41CA5EB4000D4220B /* Info.plist */; };
+		13D171671CB4562D0048649E /* HNUserRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D171661CB4562D0048649E /* HNUserRegistration.swift */; };
+		13D70DBD1CB0685A00DD0291 /* HNParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D70DBC1CB0685A00DD0291 /* HNParse.swift */; };
+		13D70DC11CB06CEA00DD0291 /* HNParseLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D70DC01CB06CEA00DD0291 /* HNParseLogin.swift */; };
+		13D70DC31CB07CE700DD0291 /* HNParseSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D70DC21CB07CE700DD0291 /* HNParseSignUp.swift */; };
+		13EF07CD1CA6AF54007CB41B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EF07CC1CA6AF54007CB41B /* RegisterViewController.swift */; };
+		58219FA71CC608FB00E40F48 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58219FA61CC608FB00E40F48 /* HealthKit.framework */; };
+		58219FAF1CC8678A00E40F48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58219FAE1CC8678A00E40F48 /* Main.storyboard */; };
+		582EBFC61CC464AF00C19951 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582EBFC41CC464AF00C19951 /* Interface.storyboard */; };
+		582EBFC81CC464AF00C19951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582EBFC71CC464AF00C19951 /* Assets.xcassets */; };
+		582EBFCF1CC464AF00C19951 /* HealthNoteWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 582EBFCE1CC464AF00C19951 /* HealthNoteWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		582EBFD61CC464AF00C19951 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EBFD51CC464AF00C19951 /* InterfaceController.swift */; };
+		582EBFD81CC464AF00C19951 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EBFD71CC464AF00C19951 /* ExtensionDelegate.swift */; };
+		582EBFDA1CC464AF00C19951 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EBFD91CC464AF00C19951 /* NotificationController.swift */; };
+		582EBFDC1CC464AF00C19951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582EBFDB1CC464AF00C19951 /* Assets.xcassets */; };
+		582EBFE01CC464AF00C19951 /* HealthNoteWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 582EBFC21CC464AF00C19951 /* HealthNoteWatch.app */; };
+		588FE1C41CD3F909000C35C4 /* DoctorSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588FE1C31CD3F909000C35C4 /* DoctorSearch.swift */; };
+		588FE1CA1CD3FF20000C35C4 /* Reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588FE1C91CD3FF20000C35C4 /* Reminders.swift */; };
+		588FE1CD1CD40BEE000C35C4 /* ReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588FE1CB1CD40BEE000C35C4 /* ReminderTableViewCell.swift */; };
+		588FE1CE1CD40BEE000C35C4 /* ReminderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 588FE1CC1CD40BEE000C35C4 /* ReminderTableViewCell.xib */; };
+		588FE1D01CD40C3A000C35C4 /* ReminderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588FE1CF1CD40C3A000C35C4 /* ReminderModel.swift */; };
+		588FE1D21CD410B6000C35C4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588FE1D11CD410B6000C35C4 /* Profile.swift */; };
+		588FE1D41CD4120B000C35C4 /* HNPatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588FE1D31CD4120B000C35C4 /* HNPatient.swift */; };
+		588FE1D71CD4124A000C35C4 /* NormalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588FE1D51CD4124A000C35C4 /* NormalTableViewCell.swift */; };
+		588FE1D81CD4124A000C35C4 /* NormalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 588FE1D61CD4124A000C35C4 /* NormalTableViewCell.xib */; };
+		588FE1DA1CD41370000C35C4 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588FE1D91CD41370000C35C4 /* GlobalVariables.swift */; };
+		58D7F0A41CCDBDE600612354 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D7F0A31CCDBDE600612354 /* WatchKit.framework */; };
+		58D7F0CD1CCEC0EB00612354 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D7F0CC1CCEC0EB00612354 /* libc++.tbd */; };
+		58D7F0D11CCEC69A00612354 /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D7F0D01CCEC69A00612354 /* ShinobiCharts.framework */; };
+		770E394F83FAC26673AB491F /* Pods_HealthNoteWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667B166C869BE3E15DF9157E /* Pods_HealthNoteWatch.framework */; };
+		BE56521387922DED3FC42EFF /* Pods_HealthNoteWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A33BCF6600D66D45437CF96 /* Pods_HealthNoteWatch_Extension.framework */; };
+		CC23E875BD36FAAFC9300300 /* Pods_HealthNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B243497CE63299E7FBB676BE /* Pods_HealthNote.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		582EBFD01CC464AF00C19951 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE09A9611C8D54A4005ED767 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 582EBFCD1CC464AF00C19951;
+			remoteInfo = "HealthNoteWatch Extension";
+		};
+		582EBFDE1CC464AF00C19951 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE09A9611C8D54A4005ED767 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 582EBFC11CC464AF00C19951;
+			remoteInfo = HealthNoteWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		582EBFE61CC464AF00C19951 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				582EBFCF1CC464AF00C19951 /* HealthNoteWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		582EBFE81CC464AF00C19951 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				582EBFE01CC464AF00C19951 /* HealthNoteWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58D7F0BC1CCDC0C300612354 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58D7F0C01CCDC13C00612354 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		13C2C7A71CA60092009CEE23 /* GetStartedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStartedVC.swift; sourceTree = "<group>"; };
+		13C5F2951CA5EB4000D4220B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		13C5F2981CA5EB4000D4220B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13C5F2A31CA5EB4000D4220B /* PLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLoginViewController.swift; sourceTree = "<group>"; };
+		13C5F2A61CA5EB4000D4220B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		13C5F2A71CA5EB4000D4220B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		13C5F2A91CA5EB4000D4220B /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		13C5F2AA1CA5EB4000D4220B /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		13C5F2AB1CA5EB4000D4220B /* SingletonStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonStoryboard.swift; sourceTree = "<group>"; };
+		13C5F2AD1CA5EB4000D4220B /* MenuTableModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableModel.swift; sourceTree = "<group>"; };
+		13C5F2B01CA5EB4000D4220B /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
+		13C5F2B11CA5EB4000D4220B /* DashboardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardCollectionViewCell.xib; sourceTree = "<group>"; };
+		13C5F2B21CA5EB4000D4220B /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		13C5F2B31CA5EB4000D4220B /* MenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		13C5F2B41CA5EB4000D4220B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13D171661CB4562D0048649E /* HNUserRegistration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNUserRegistration.swift; sourceTree = "<group>"; };
+		13D70DBC1CB0685A00DD0291 /* HNParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNParse.swift; sourceTree = "<group>"; };
+		13D70DC01CB06CEA00DD0291 /* HNParseLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNParseLogin.swift; sourceTree = "<group>"; };
+		13D70DC21CB07CE700DD0291 /* HNParseSignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNParseSignUp.swift; sourceTree = "<group>"; };
+		13EF07CC1CA6AF54007CB41B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		34A8790A493BD2942C1DC19F /* Pods-HealthNoteWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthNoteWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthNoteWatch Extension/Pods-HealthNoteWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		3C8593FD47F3118EEB44B913 /* Pods-HealthNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthNote/Pods-HealthNote.release.xcconfig"; sourceTree = "<group>"; };
+		3D38FB65188C86E24018F1E2 /* Pods-HealthNoteWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthNoteWatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthNoteWatch/Pods-HealthNoteWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		3F626274D322D69CCA70926C /* Pods-HealthNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthNote/Pods-HealthNote.debug.xcconfig"; sourceTree = "<group>"; };
+		41E02C6BFDD8F6CE342C26E5 /* Pods-HealthNoteWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthNoteWatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthNoteWatch/Pods-HealthNoteWatch.release.xcconfig"; sourceTree = "<group>"; };
+		58219FA61CC608FB00E40F48 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		58219FA81CC608FB00E40F48 /* HealthNote_V1.0.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HealthNote_V1.0.entitlements; sourceTree = "<group>"; };
+		58219FAE1CC8678A00E40F48 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = HealthNote_V1.0/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		582EBFC21CC464AF00C19951 /* HealthNoteWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthNoteWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		582EBFC51CC464AF00C19951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		582EBFC71CC464AF00C19951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		582EBFC91CC464AF00C19951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		582EBFCE1CC464AF00C19951 /* HealthNoteWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HealthNoteWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		582EBFD41CC464AF00C19951 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		582EBFD51CC464AF00C19951 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		582EBFD71CC464AF00C19951 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		582EBFD91CC464AF00C19951 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		582EBFDB1CC464AF00C19951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		582EBFDD1CC464AF00C19951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		582EBFE91CC4691C00C19951 /* HealthNoteWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "HealthNoteWatch Extension.entitlements"; sourceTree = "<group>"; };
+		588FE1C31CD3F909000C35C4 /* DoctorSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorSearch.swift; sourceTree = "<group>"; };
+		588FE1C91CD3FF20000C35C4 /* Reminders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reminders.swift; sourceTree = "<group>"; };
+		588FE1CB1CD40BEE000C35C4 /* ReminderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderTableViewCell.swift; sourceTree = "<group>"; };
+		588FE1CC1CD40BEE000C35C4 /* ReminderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReminderTableViewCell.xib; sourceTree = "<group>"; };
+		588FE1CF1CD40C3A000C35C4 /* ReminderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderModel.swift; sourceTree = "<group>"; };
+		588FE1D11CD410B6000C35C4 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		588FE1D31CD4120B000C35C4 /* HNPatient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNPatient.swift; sourceTree = "<group>"; };
+		588FE1D51CD4124A000C35C4 /* NormalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalTableViewCell.swift; sourceTree = "<group>"; };
+		588FE1D61CD4124A000C35C4 /* NormalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NormalTableViewCell.xib; sourceTree = "<group>"; };
+		588FE1D91CD41370000C35C4 /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		58D7F0A31CCDBDE600612354 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
+		58D7F0C51CCEBF9E00612354 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.2.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		58D7F0C71CCEBFEE00612354 /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShinobiCharts.framework; path = "../../../../../../Downloads/trials/shinobicharts/shinobicontrols-ios-charts-trial-objc-2.8.7-3/ShinobiCharts.framework"; sourceTree = "<group>"; };
+		58D7F0CC1CCEC0EB00612354 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		58D7F0CF1CCEC27800612354 /* HealthNoteHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthNoteHeader.h; sourceTree = "<group>"; };
+		58D7F0D01CCEC69A00612354 /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShinobiCharts.framework; sourceTree = "<group>"; };
+		58EE77CF1CCD3EE4000E5782 /* HealthNoteWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HealthNoteWatch.entitlements; sourceTree = "<group>"; };
+		5A33BCF6600D66D45437CF96 /* Pods_HealthNoteWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthNoteWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		667B166C869BE3E15DF9157E /* Pods_HealthNoteWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthNoteWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE09A9691C8D54A4005ED767 /* HealthNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B243497CE63299E7FBB676BE /* Pods_HealthNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA0B19592E5B91A9D332D04 /* Pods-HealthNoteWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthNoteWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthNoteWatch Extension/Pods-HealthNoteWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		582EBFCB1CC464AF00C19951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE56521387922DED3FC42EFF /* Pods_HealthNoteWatch_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE09A9661C8D54A4005ED767 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58D7F0D11CCEC69A00612354 /* ShinobiCharts.framework in Frameworks */,
+				58D7F0CD1CCEC0EB00612354 /* libc++.tbd in Frameworks */,
+				58D7F0A41CCDBDE600612354 /* WatchKit.framework in Frameworks */,
+				58219FA71CC608FB00E40F48 /* HealthKit.framework in Frameworks */,
+				CC23E875BD36FAAFC9300300 /* Pods_HealthNote.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3C70CAC454D918B7A7079F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				770E394F83FAC26673AB491F /* Pods_HealthNoteWatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13C2C7A61CA6001B009CEE23 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		13C5F2941CA5EB4000D4220B /* HealthNote_V1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				58219FA81CC608FB00E40F48 /* HealthNote_V1.0.entitlements */,
+				58219FAE1CC8678A00E40F48 /* Main.storyboard */,
+				13C5F2951CA5EB4000D4220B /* AppDelegate.swift */,
+				13C5F29D1CA5EB4000D4220B /* Classes */,
+				13C5F2B41CA5EB4000D4220B /* Info.plist */,
+				13C5F2961CA5EB4000D4220B /* Assets */,
+			);
+			path = HealthNote_V1.0;
+			sourceTree = "<group>";
+		};
+		13C5F2961CA5EB4000D4220B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				13C5F2971CA5EB4000D4220B /* Images */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		13C5F2971CA5EB4000D4220B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				13C5F2981CA5EB4000D4220B /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		13C5F29D1CA5EB4000D4220B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				13C5F29E1CA5EB4000D4220B /* Controller */,
+				13C5F2A81CA5EB4000D4220B /* Helpers */,
+				13C5F2AC1CA5EB4000D4220B /* Model */,
+				13C5F2AE1CA5EB4000D4220B /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		13C5F29E1CA5EB4000D4220B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				13C5F2A21CA5EB4000D4220B /* Login */,
+				13C5F2A51CA5EB4000D4220B /* Side Menu View Controller */,
+				13C5F2A71CA5EB4000D4220B /* ViewController.swift */,
+				588FE1C31CD3F909000C35C4 /* DoctorSearch.swift */,
+				588FE1C91CD3FF20000C35C4 /* Reminders.swift */,
+				588FE1D11CD410B6000C35C4 /* Profile.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		13C5F2A21CA5EB4000D4220B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				13C2C7A71CA60092009CEE23 /* GetStartedVC.swift */,
+				13C5F2A31CA5EB4000D4220B /* PLoginViewController.swift */,
+				13EF07CC1CA6AF54007CB41B /* RegisterViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		13C5F2A51CA5EB4000D4220B /* Side Menu View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				13C5F2A61CA5EB4000D4220B /* MenuViewController.swift */,
+			);
+			path = "Side Menu View Controller";
+			sourceTree = "<group>";
+		};
+		13C5F2A81CA5EB4000D4220B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				588FE1D91CD41370000C35C4 /* GlobalVariables.swift */,
+				13D70DBB1CB0684700DD0291 /* HNParseHelper */,
+				13C5F2A91CA5EB4000D4220B /* Constant.swift */,
+				13C5F2AA1CA5EB4000D4220B /* Singleton.swift */,
+				13C5F2AB1CA5EB4000D4220B /* SingletonStoryboard.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		13C5F2AC1CA5EB4000D4220B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				588FE1CF1CD40C3A000C35C4 /* ReminderModel.swift */,
+				13D70DBF1CB06CD000DD0291 /* Parse Query */,
+				13C5F2AD1CA5EB4000D4220B /* MenuTableModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13C5F2AE1CA5EB4000D4220B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13C2C7A61CA6001B009CEE23 /* Storyboards */,
+				13C5F2AF1CA5EB4000D4220B /* Custom Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13C5F2AF1CA5EB4000D4220B /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				588FE1D51CD4124A000C35C4 /* NormalTableViewCell.swift */,
+				588FE1D61CD4124A000C35C4 /* NormalTableViewCell.xib */,
+				588FE1CB1CD40BEE000C35C4 /* ReminderTableViewCell.swift */,
+				588FE1CC1CD40BEE000C35C4 /* ReminderTableViewCell.xib */,
+				13C5F2B01CA5EB4000D4220B /* DashboardCollectionViewCell.swift */,
+				13C5F2B11CA5EB4000D4220B /* DashboardCollectionViewCell.xib */,
+				13C5F2B21CA5EB4000D4220B /* MenuTableViewCell.swift */,
+				13C5F2B31CA5EB4000D4220B /* MenuTableViewCell.xib */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		13D70DBB1CB0684700DD0291 /* HNParseHelper */ = {
+			isa = PBXGroup;
+			children = (
+				13D70DBC1CB0685A00DD0291 /* HNParse.swift */,
+			);
+			path = HNParseHelper;
+			sourceTree = "<group>";
+		};
+		13D70DBF1CB06CD000DD0291 /* Parse Query */ = {
+			isa = PBXGroup;
+			children = (
+				588FE1D31CD4120B000C35C4 /* HNPatient.swift */,
+				13D70DC01CB06CEA00DD0291 /* HNParseLogin.swift */,
+				13D70DC21CB07CE700DD0291 /* HNParseSignUp.swift */,
+				13D171661CB4562D0048649E /* HNUserRegistration.swift */,
+			);
+			path = "Parse Query";
+			sourceTree = "<group>";
+		};
+		47E689A4B6054FBCB4A92461 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F626274D322D69CCA70926C /* Pods-HealthNote.debug.xcconfig */,
+				3C8593FD47F3118EEB44B913 /* Pods-HealthNote.release.xcconfig */,
+				34A8790A493BD2942C1DC19F /* Pods-HealthNoteWatch Extension.debug.xcconfig */,
+				BEA0B19592E5B91A9D332D04 /* Pods-HealthNoteWatch Extension.release.xcconfig */,
+				3D38FB65188C86E24018F1E2 /* Pods-HealthNoteWatch.debug.xcconfig */,
+				41E02C6BFDD8F6CE342C26E5 /* Pods-HealthNoteWatch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		582EBFC31CC464AF00C19951 /* HealthNoteWatch */ = {
+			isa = PBXGroup;
+			children = (
+				58EE77CF1CCD3EE4000E5782 /* HealthNoteWatch.entitlements */,
+				582EBFC41CC464AF00C19951 /* Interface.storyboard */,
+				582EBFC71CC464AF00C19951 /* Assets.xcassets */,
+				582EBFC91CC464AF00C19951 /* Info.plist */,
+			);
+			path = HealthNoteWatch;
+			sourceTree = "<group>";
+		};
+		582EBFD21CC464AF00C19951 /* HealthNoteWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				582EBFE91CC4691C00C19951 /* HealthNoteWatch Extension.entitlements */,
+				582EBFD51CC464AF00C19951 /* InterfaceController.swift */,
+				582EBFD71CC464AF00C19951 /* ExtensionDelegate.swift */,
+				582EBFD91CC464AF00C19951 /* NotificationController.swift */,
+				582EBFDB1CC464AF00C19951 /* Assets.xcassets */,
+				582EBFDD1CC464AF00C19951 /* Info.plist */,
+				582EBFD31CC464AF00C19951 /* Supporting Files */,
+			);
+			path = "HealthNoteWatch Extension";
+			sourceTree = "<group>";
+		};
+		582EBFD31CC464AF00C19951 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				582EBFD41CC464AF00C19951 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE09A9601C8D54A4005ED767 = {
+			isa = PBXGroup;
+			children = (
+				13C5F2941CA5EB4000D4220B /* HealthNote_V1.0 */,
+				582EBFC31CC464AF00C19951 /* HealthNoteWatch */,
+				582EBFD21CC464AF00C19951 /* HealthNoteWatch Extension */,
+				AE09A96A1C8D54A4005ED767 /* Products */,
+				E7ED18F479AA40D824605273 /* Frameworks */,
+				58D7F0CF1CCEC27800612354 /* HealthNoteHeader.h */,
+				47E689A4B6054FBCB4A92461 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		AE09A96A1C8D54A4005ED767 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE09A9691C8D54A4005ED767 /* HealthNote.app */,
+				582EBFC21CC464AF00C19951 /* HealthNoteWatch.app */,
+				582EBFCE1CC464AF00C19951 /* HealthNoteWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7ED18F479AA40D824605273 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58D7F0D01CCEC69A00612354 /* ShinobiCharts.framework */,
+				58D7F0CC1CCEC0EB00612354 /* libc++.tbd */,
+				58D7F0C71CCEBFEE00612354 /* ShinobiCharts.framework */,
+				58D7F0C51CCEBF9E00612354 /* libc++.tbd */,
+				58D7F0A31CCDBDE600612354 /* WatchKit.framework */,
+				58219FA61CC608FB00E40F48 /* HealthKit.framework */,
+				B243497CE63299E7FBB676BE /* Pods_HealthNote.framework */,
+				667B166C869BE3E15DF9157E /* Pods_HealthNoteWatch.framework */,
+				5A33BCF6600D66D45437CF96 /* Pods_HealthNoteWatch_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		582EBFC11CC464AF00C19951 /* HealthNoteWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 582EBFE71CC464AF00C19951 /* Build configuration list for PBXNativeTarget "HealthNoteWatch" */;
+			buildPhases = (
+				2734912308AB66787CF47B78 /* 📦 Check Pods Manifest.lock */,
+				582EBFC01CC464AF00C19951 /* Resources */,
+				582EBFE61CC464AF00C19951 /* Embed App Extensions */,
+				E3C70CAC454D918B7A7079F9 /* Frameworks */,
+				5358A6AFF1DE4A3C098B8F03 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				582EBFD11CC464AF00C19951 /* PBXTargetDependency */,
+			);
+			name = HealthNoteWatch;
+			productName = HealthNoteWatch;
+			productReference = 582EBFC21CC464AF00C19951 /* HealthNoteWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		582EBFCD1CC464AF00C19951 /* HealthNoteWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 582EBFE51CC464AF00C19951 /* Build configuration list for PBXNativeTarget "HealthNoteWatch Extension" */;
+			buildPhases = (
+				C332F38B24B28353FF491D15 /* 📦 Check Pods Manifest.lock */,
+				582EBFCA1CC464AF00C19951 /* Sources */,
+				582EBFCB1CC464AF00C19951 /* Frameworks */,
+				582EBFCC1CC464AF00C19951 /* Resources */,
+				C4FA6ABEA67914A7BA38FD87 /* 📦 Embed Pods Frameworks */,
+				65A3C563CFD21FF268B65FB4 /* 📦 Copy Pods Resources */,
+				58D7F0C01CCDC13C00612354 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HealthNoteWatch Extension";
+			productName = "HealthNoteWatch Extension";
+			productReference = 582EBFCE1CC464AF00C19951 /* HealthNoteWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		AE09A9681C8D54A4005ED767 /* HealthNote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE09A97B1C8D54A5005ED767 /* Build configuration list for PBXNativeTarget "HealthNote" */;
+			buildPhases = (
+				2D5B683205FAEF63C54A7B89 /* 📦 Check Pods Manifest.lock */,
+				AE09A9651C8D54A4005ED767 /* Sources */,
+				AE09A9661C8D54A4005ED767 /* Frameworks */,
+				AE09A9671C8D54A4005ED767 /* Resources */,
+				582EBFE81CC464AF00C19951 /* Embed Watch Content */,
+				E0D105FE5213102B7071C74D /* 📦 Embed Pods Frameworks */,
+				E933E0365AE21D8243BD4D8F /* 📦 Copy Pods Resources */,
+				58D7F0BC1CCDC0C300612354 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				582EBFDF1CC464AF00C19951 /* PBXTargetDependency */,
+			);
+			name = HealthNote;
+			productName = Piedmont;
+			productReference = AE09A9691C8D54A4005ED767 /* HealthNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE09A9611C8D54A4005ED767 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = iDev;
+				TargetAttributes = {
+					582EBFC11CC464AF00C19951 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = E897H33R58;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					582EBFCD1CC464AF00C19951 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = E897H33R58;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					AE09A9681C8D54A4005ED767 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = E897H33R58;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = AE09A9641C8D54A4005ED767 /* Build configuration list for PBXProject "HealthNote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE09A9601C8D54A4005ED767;
+			productRefGroup = AE09A96A1C8D54A4005ED767 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE09A9681C8D54A4005ED767 /* HealthNote */,
+				582EBFC11CC464AF00C19951 /* HealthNoteWatch */,
+				582EBFCD1CC464AF00C19951 /* HealthNoteWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		582EBFC01CC464AF00C19951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				582EBFC81CC464AF00C19951 /* Assets.xcassets in Resources */,
+				582EBFC61CC464AF00C19951 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		582EBFCC1CC464AF00C19951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				582EBFDC1CC464AF00C19951 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE09A9671C8D54A4005ED767 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C5F2C61CA5EB4000D4220B /* MenuTableViewCell.xib in Resources */,
+				13C5F2B61CA5EB4000D4220B /* Assets.xcassets in Resources */,
+				58219FAF1CC8678A00E40F48 /* Main.storyboard in Resources */,
+				13C5F2C41CA5EB4000D4220B /* DashboardCollectionViewCell.xib in Resources */,
+				13C5F2C71CA5EB4000D4220B /* Info.plist in Resources */,
+				588FE1D81CD4124A000C35C4 /* NormalTableViewCell.xib in Resources */,
+				588FE1CE1CD40BEE000C35C4 /* ReminderTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2734912308AB66787CF47B78 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2D5B683205FAEF63C54A7B89 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5358A6AFF1DE4A3C098B8F03 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthNoteWatch/Pods-HealthNoteWatch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65A3C563CFD21FF268B65FB4 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthNoteWatch Extension/Pods-HealthNoteWatch Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C332F38B24B28353FF491D15 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4FA6ABEA67914A7BA38FD87 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthNoteWatch Extension/Pods-HealthNoteWatch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0D105FE5213102B7071C74D /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthNote/Pods-HealthNote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E933E0365AE21D8243BD4D8F /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthNote/Pods-HealthNote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		582EBFCA1CC464AF00C19951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				582EBFDA1CC464AF00C19951 /* NotificationController.swift in Sources */,
+				582EBFD81CC464AF00C19951 /* ExtensionDelegate.swift in Sources */,
+				582EBFD61CC464AF00C19951 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE09A9651C8D54A4005ED767 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				588FE1D71CD4124A000C35C4 /* NormalTableViewCell.swift in Sources */,
+				13C5F2BF1CA5EB4000D4220B /* Constant.swift in Sources */,
+				13C5F2C31CA5EB4000D4220B /* DashboardCollectionViewCell.swift in Sources */,
+				588FE1CD1CD40BEE000C35C4 /* ReminderTableViewCell.swift in Sources */,
+				13C5F2C51CA5EB4000D4220B /* MenuTableViewCell.swift in Sources */,
+				588FE1CA1CD3FF20000C35C4 /* Reminders.swift in Sources */,
+				13D171671CB4562D0048649E /* HNUserRegistration.swift in Sources */,
+				13EF07CD1CA6AF54007CB41B /* RegisterViewController.swift in Sources */,
+				588FE1C41CD3F909000C35C4 /* DoctorSearch.swift in Sources */,
+				13C5F2C21CA5EB4000D4220B /* MenuTableModel.swift in Sources */,
+				13C5F2BE1CA5EB4000D4220B /* ViewController.swift in Sources */,
+				588FE1D21CD410B6000C35C4 /* Profile.swift in Sources */,
+				588FE1D41CD4120B000C35C4 /* HNPatient.swift in Sources */,
+				13C5F2C11CA5EB4000D4220B /* SingletonStoryboard.swift in Sources */,
+				13D70DBD1CB0685A00DD0291 /* HNParse.swift in Sources */,
+				13C2C7A81CA60092009CEE23 /* GetStartedVC.swift in Sources */,
+				13C5F2BD1CA5EB4000D4220B /* MenuViewController.swift in Sources */,
+				13C5F2B51CA5EB4000D4220B /* AppDelegate.swift in Sources */,
+				588FE1DA1CD41370000C35C4 /* GlobalVariables.swift in Sources */,
+				13D70DC11CB06CEA00DD0291 /* HNParseLogin.swift in Sources */,
+				13C5F2C01CA5EB4000D4220B /* Singleton.swift in Sources */,
+				588FE1D01CD40C3A000C35C4 /* ReminderModel.swift in Sources */,
+				13C5F2BB1CA5EB4000D4220B /* PLoginViewController.swift in Sources */,
+				13D70DC31CB07CE700DD0291 /* HNParseSignUp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		582EBFD11CC464AF00C19951 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 582EBFCD1CC464AF00C19951 /* HealthNoteWatch Extension */;
+			targetProxy = 582EBFD01CC464AF00C19951 /* PBXContainerItemProxy */;
+		};
+		582EBFDF1CC464AF00C19951 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 582EBFC11CC464AF00C19951 /* HealthNoteWatch */;
+			targetProxy = 582EBFDE1CC464AF00C19951 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		582EBFC41CC464AF00C19951 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				582EBFC51CC464AF00C19951 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		582EBFE11CC464AF00C19951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D38FB65188C86E24018F1E2 /* Pods-HealthNoteWatch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HealthNoteWatch/HealthNoteWatch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Arjun Shukla (BL7H2UGCJJ)";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = HealthNoteWatch_Extension;
+				INFOPLIST_FILE = HealthNoteWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sjsu.HealthNote.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		582EBFE21CC464AF00C19951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41E02C6BFDD8F6CE342C26E5 /* Pods-HealthNoteWatch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HealthNoteWatch/HealthNoteWatch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = HealthNoteWatch_Extension;
+				INFOPLIST_FILE = HealthNoteWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sjsu.HealthNote.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		582EBFE31CC464AF00C19951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34A8790A493BD2942C1DC19F /* Pods-HealthNoteWatch Extension.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "HealthNoteWatch Extension/HealthNoteWatch Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Arjun Shukla (BL7H2UGCJJ)";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				HEADER_SEARCH_PATHS = "${PRODS_ROOT}/Headers/**";
+				INFOPLIST_FILE = "HealthNoteWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sjsu.HealthNote.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		582EBFE41CC464AF00C19951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEA0B19592E5B91A9D332D04 /* Pods-HealthNoteWatch Extension.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "HealthNoteWatch Extension/HealthNoteWatch Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Arjun Shukla (BL7H2UGCJJ)";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				HEADER_SEARCH_PATHS = "${PRODS_ROOT}/Headers/**";
+				INFOPLIST_FILE = "HealthNoteWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sjsu.HealthNote.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		AE09A9791C8D54A5005ED767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/snehapimpalkar/Documents/SJSU/Sem4/HealthNote/GitHub/HealthNote/HealthNoteHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE09A97A1C8D54A5005ED767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/snehapimpalkar/Documents/SJSU/Sem4/HealthNote/GitHub/HealthNote/HealthNoteHeader.h;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE09A97C1C8D54A5005ED767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F626274D322D69CCA70926C /* Pods-HealthNote.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = HealthNote_V1.0/HealthNote_V1.0.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/HealthNoteHeader.h\"/**";
+				INFOPLIST_FILE = "$(SRCROOT)/HealthNote_V1.0/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks $(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sjsu.HealthNote;
+				PRODUCT_NAME = HealthNote;
+				PROVISIONING_PROFILE = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/snehapimpalkar/Documents/SJSU/Sem4/HealthNote/GitHub/HealthNote/HealthNoteHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE09A97D1C8D54A5005ED767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C8593FD47F3118EEB44B913 /* Pods-HealthNote.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = HealthNote_V1.0/HealthNote_V1.0.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/HealthNoteHeader.h\"/**";
+				INFOPLIST_FILE = "$(SRCROOT)/HealthNote_V1.0/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks $(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sjsu.HealthNote;
+				PRODUCT_NAME = HealthNote;
+				PROVISIONING_PROFILE = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/snehapimpalkar/Documents/SJSU/Sem4/HealthNote/GitHub/HealthNote/HealthNoteHeader.h;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		582EBFE51CC464AF00C19951 /* Build configuration list for PBXNativeTarget "HealthNoteWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				582EBFE31CC464AF00C19951 /* Debug */,
+				582EBFE41CC464AF00C19951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		582EBFE71CC464AF00C19951 /* Build configuration list for PBXNativeTarget "HealthNoteWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				582EBFE11CC464AF00C19951 /* Debug */,
+				582EBFE21CC464AF00C19951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE09A9641C8D54A4005ED767 /* Build configuration list for PBXProject "HealthNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE09A9791C8D54A5005ED767 /* Debug */,
+				AE09A97A1C8D54A5005ED767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE09A97B1C8D54A5005ED767 /* Build configuration list for PBXNativeTarget "HealthNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE09A97C1C8D54A5005ED767 /* Debug */,
+				AE09A97D1C8D54A5005ED767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE09A9611C8D54A4005ED767 /* Project object */;
+}

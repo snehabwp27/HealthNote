@@ -1,0 +1,6 @@
+framework module Pods_HealthNote {
+  umbrella header "Pods-HealthNote-umbrella.h"
+
+  export *
+  module * { export * }
+}
