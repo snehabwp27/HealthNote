@@ -1,10 +1,8 @@
 //
 //  InterfaceController.swift
 //  HealthNoteWatch Extension
-//
-//  Created by Sneha Pimpalkar on 4/17/16.
+//  Created by Tejas on 4/17/16.
 //  Copyright © 2016 iDev. All rights reserved.
-//
 
 import WatchKit
 import Foundation
@@ -12,10 +10,7 @@ import HealthKit
 import WatchConnectivity
 
 class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate, WCSessionDelegate {
-    
     var session : WCSession!
-    
-    
     @IBOutlet private weak var label: WKInterfaceLabel!
     @IBOutlet private weak var deviceLabel : WKInterfaceLabel!
     @IBOutlet private weak var heart: WKInterfaceImage!
@@ -25,9 +20,11 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate, WCSe
     var value : Double!
     
     //State of the app - is the workout activated
+    
     var workoutActive = false
     
     // define the activity type and location
+    
     var workoutSession : HKWorkoutSession?
     let heartRateUnit = HKUnit(fromString: "count/min")
     var anchor = HKQueryAnchor(fromValue: Int(HKAnchoredObjectQueryNoAnchor))
@@ -89,7 +86,6 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate, WCSe
             label.setText("cannot start")
         }
     }
-    
     func workoutDidEnd(date : NSDate) {
         if let query = createHeartRateStreamingQuery(date) {
             healthStore.stopQuery(query)
@@ -114,9 +110,6 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate, WCSe
             self.startStopButton.setTitle("Stop")
             startWorkout()
         }
-        
-        
-        
     }
     
     func startWorkout() {
@@ -175,12 +168,9 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate, WCSe
                 print(error)
         })
     }
-    
-    
     func updateDeviceName(deviceName: String) {
         deviceLabel.setText(deviceName)
     }
-    
     func animateHeart() {
             self.animateWithDuration(0.5) {
             self.heart.setWidth(60)
